@@ -15,7 +15,12 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("Which Creature would you like to know about?");
-        String CreatureName = scanner.nextLine();
+        String creatureName = scanner.nextLine();
+        String newStatement = "SELECT * FROM Minecraft.Cretures WHERE Name LIKE ' " + creatureName +"';";
+
+        Statement statement = connection.createStatement();
+
+
 
     }
 
